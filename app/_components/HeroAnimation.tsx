@@ -73,7 +73,7 @@ const HeroAnimation = ({children}: { children: React.ReactNode }) => {
             };
 
             // 3. THE FIX: Check if video is already ready
-            if (videoElement.readyState >= 2) {
+            if (videoElement.readyState >= 1) {
                 // If metadata is already loaded (common on reload)
                 initVideoAnim();
             } else {
