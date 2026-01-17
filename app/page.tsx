@@ -3,13 +3,13 @@ import leftLeaf from '../public/images/hero-left-leaf.png';
 import rightLeaf from '../public/images/hero-right-leaf.png';
 import Link from 'next/link';
 import HeroAnimation from "@/app/_components/HeroAnimation";
+import React from "react";
 
 
 export default function Home() {
-
     return (
-        <section className={'noisy'} id={'hero'}>
-            <HeroAnimation>
+        <HeroAnimation>
+            <section className={'noisy'} id={'hero'}>
                 <h1 className={'title'}>MOJITO</h1>
                 <Image src={leftLeaf} alt={'left-left'} className={'left-leaf'}
                        sizes={'auto'}
@@ -26,19 +26,28 @@ export default function Home() {
                     </div>
                     <div className={'view-cocktails'}>
                         <p className={'subtitle'}>
-                            Every cocktail on our menu is a blend of premium ingredients, creative flair, and timeless
+                            Every cocktail on our menu is a blend of premium ingredients, creative flair, and
+                            timeless
                             recipes — designed to delight your senses.
                         </p>
                         <Link href={'#cocktails'}>
                             View CockTails
-
                         </Link>
 
                     </div>
                 </div>
 
-            </HeroAnimation>
 
-        </section>
+            </section>
+            <div className={'video absolute inset-0'}>
+                <video
+                    src="/videos/output.mp4"
+                    muted
+                    playsInline
+                    preload="auto"
+                />
+            </div>
+        </HeroAnimation>
+
     );
 }
