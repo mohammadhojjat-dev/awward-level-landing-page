@@ -32,7 +32,6 @@ export default function RootLayout({children}: Readonly<{
         <main>
             <Navbar/>
             {children}
-            <div className={'h-dvh bg-black'}></div>
         </main>
         </body>
         </html>
