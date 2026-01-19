@@ -75,7 +75,7 @@ const HeroAnimation = ({children}: { children: React.ReactNode }) => {
             }
         }
 
-    }, {scope: containerRef, dependencies: [isMobile]})
+    }, {scope: containerRef})
 
     return (
         <div ref={containerRef}>{children}</div>
