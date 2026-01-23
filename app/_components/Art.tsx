@@ -1,8 +1,8 @@
 import React from 'react'
 import {featureLists, goodLists} from "@/constants";
 import Image from "next/image";
-import Check from '@/public/images/check.png'
-import CockTailImage from '@/public/images/under-img.jpg'
+import check from '@/public/images/check.png'
+import cockTailImage from '@/public/images/under-img.jpg'
 import ArtAnimation from "@/app/_components/animations/ArtAnimation";
 
 
@@ -16,21 +16,21 @@ const Art = () => {
                         <ul className={'space-y-4 will-fade'}>
                             {goodLists.map((feature, index) => (
                                 <li key={index} className={'flex items-center gap-2'}>
-                                    <Image src={Check} alt={'check'}/>
+                                    <Image src={check} alt={'check'}/>
                                     <p>{feature}</p>
                                 </li>
                             ))}
                         </ul>
 
                         <div className={'cocktail-img'}>
-                            <Image src={CockTailImage} alt={'cocktail'}
+                            <Image src={cockTailImage} alt={'cocktail'}
                                    className={'abs-center masked-img size-full object-contain'}/>
                         </div>
 
                         <ul className={'space-y-4 will-fade'}>
                             {featureLists.map((feature, index) => (
                                 <li key={index} className={'flex items-center justify-start gap-2'}>
-                                    <Image src={Check} alt={'check'}/>
+                                    <Image src={check} alt={'check'}/>
                                     <p className={'md:w-fit w-60'}>{feature}</p>
                                 </li>
                             ))}

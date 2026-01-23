@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
-import CockTailRightLeaf from '@/public/images/cocktail-right-leaf.png'
-import CockTailLeftLeaf from '@/public/images/cocktail-left-leaf.png'
+import cockTailRightLeaf from '@/public/images/cocktail-right-leaf.png'
+import cockTailLeftLeaf from '@/public/images/cocktail-left-leaf.png'
 import {cocktailLists, mockTailLists} from "@/constants";
 import CocktailsAnimation from "@/app/_components/animations/CocktailsAnimation";
 
@@ -10,8 +10,8 @@ const Cocktails = () => {
     return (
         <CocktailsAnimation>
             <section id={'cocktails'} className={'noisy'}>
-                <Image src={CockTailRightLeaf} alt={'right-image'} id={'c-right-leaf'}/>
-                <Image src={CockTailLeftLeaf} alt={'left-image'} id={'c-left-leaf'}/>
+                <Image src={cockTailRightLeaf} alt={'right-image'} id={'c-right-leaf'}/>
+                <Image src={cockTailLeftLeaf} alt={'left-image'} id={'c-left-leaf'}/>
                 <div className={'list'}>
                     <div className={'popular'}>
 

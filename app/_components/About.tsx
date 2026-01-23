@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from "next/image";
-import AboutImage1 from '@/public/images/abt1.png'
-import AboutImage2 from '@/public/images/abt2.png'
-import AboutImage3 from '@/public/images/abt3.png'
-import AboutImage4 from '@/public/images/abt4.png'
-import AboutImage5 from '@/public/images/abt5.png'
+import aboutImage1 from '@/public/images/abt1.png'
+import aboutImage2 from '@/public/images/abt2.png'
+import aboutImage3 from '@/public/images/abt3.png'
+import aboutImage4 from '@/public/images/abt4.png'
+import aboutImage5 from '@/public/images/abt5.png'
 import AboutAnimation from "@/app/_components/animations/AboutAnimation";
 
 const About = () => {
@@ -49,7 +49,7 @@ const About = () => {
                 <div className={'top-grid'}>
                     <div className={'md:col-span-3'}>
                         <div className={'noisy'}>
-                            <Image src={AboutImage1} alt={'grid-img-1'}/>
+                            <Image src={aboutImage1} alt={'grid-img-1'}/>
                         </div>
 
 
@@ -57,7 +57,7 @@ const About = () => {
 
                     <div className={'md:col-span-6'}>
                         <div className={'noisy'}>
-                            <Image src={AboutImage2} alt={'grid-img-2'}/>
+                            <Image src={aboutImage2} alt={'grid-img-2'}/>
                         </div>
 
 
@@ -66,7 +66,7 @@ const About = () => {
 
                     <div className={'md:col-span-3'}>
                         <div className={'noisy'}>
-                            <Image src={AboutImage5} alt={'grid-img-5'}/>
+                            <Image src={aboutImage5} alt={'grid-img-5'}/>
                         </div>
 
 
@@ -77,7 +77,7 @@ const About = () => {
 
                     <div className={'md:col-span-8'}>
                         <div className={'noisy'}>
-                            <Image src={AboutImage3} alt={'grid-img-3'}/>
+                            <Image src={aboutImage3} alt={'grid-img-3'}/>
                         </div>
 
 
@@ -86,7 +86,7 @@ const About = () => {
 
                     <div className={'md:col-span-4'}>
                         <div className={'noisy'}>
-                            <Image src={AboutImage4} alt={'grid-img-4'}/>
+                            <Image src={aboutImage4} alt={'grid-img-4'}/>
                         </div>
 
 
